@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
+    </head>
+    <body>
+        <header>
+            <h1>El Ahorcado</h1>
+        </header>
+        <main>
+            <div class="contenedor-buttons-inicio">
+                <button class="btn-inicio-juego">Iniciar Juego</button>
+                <button class="btn-agregar-palabra">Agregar nueva palabra</button>
+            </div>
+            <section class="contenedor-agregar-palabra">
+                <div class="contenedor-input-agregar">
+                    <p>Agregue una palabra para adivinar (Max 10 letras)</p>
+                    <input id="input-agregar-palabra" type="text" autofocus>
+                </div>
+                <div class="contenedor-botones-agregar">
+                    <button class="btn-comenzar">Guardar y empezar</button>
+                    <button class="btn-cancelar">Cancelar</button>
+                </div>
+                
+
+            </section>
+            <div class="contenedor-munieco">
+                <canvas width="1280" height="800"></canvas>
+            </div>
+            
+            <div class="contenedor-letras-noencontradas">
+                <p id="letras-noencontradas"></p>
+            </div>
+            <div class="contenedor-letras">
+                <input id="input-letras" type="text" placeholder="Letra" minlength="1" maxlength="1" autofocus>
+            </div>
+            <div class="contenedor-nuevo-juego">
+                <button class="btn-nuevo-juego">Nuevo Juego</button>
+                <button class="btn-rendirse">Rendirse</button>
+            </div>
+            
+            
+
+        </main>
+        <footer>
+            <div class="redes-sociales">
+                <a href="https://www.linkedin.com/in/faciano-angel-9712a2151/" target="_blank" rel="noopener noreferrer"
+                  class="fa fa-linkedin"></a>
+                <a href="https://github.com/angelfaa" class="fa fa-github" target="_blank"></a>
+              </div>
+              <div class="derechos">
+                <p class="copyright">© Angel Faciano</p>
+              </div>
+        </footer>
+        
+        <script src="js/iniciarJuego.js"></script>
+        <script src="js/dibujarMunieco.js"></script>
+        <script src="js/dibujarPalabra.js"></script>
+        <script src="js/adivinarLetras.js"></script>
+        <script src="js/agregarPalabra.js"></script>
+        <script src="js/nuevoJuego.js"></script>
+        <script src="js/rendirse.js"></script>
+        <script src="js/mensajes.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>      
+        
+    </body>
+</html>

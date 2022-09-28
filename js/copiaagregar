@@ -1,0 +1,25 @@
+var btnAgregarPalabra = document.querySelector(".btn-agregar-palabra");
+var inputAgregarPalabra = document.querySelector("#input-agregar-palabra");
+var btnGuardarEmpezar = document.querySelector(".btn-comenzar");
+var nuevaPalabra = "";
+
+btnAgregarPalabra.addEventListener("click", function(){
+    contenedorIniciar.classList.add("invisible");
+    console.log("agregar palabra");
+    
+    contenedorAgregar.classList.remove("invisible");
+
+    
+});
+
+btnGuardarEmpezar.addEventListener("click", function(){
+    contenedorIniciar.classList.add("invisible");
+    pantalla.classList.remove("invisible");
+    contenedorLetras.classList.remove("invisible");
+    contenedorNuevoJuego.classList.remove("invisible");
+    inputLetra.focus();  
+    dibujarHorca(pincel, "#604C2B", 10);
+    
+    palabraAdivinar = inputAgregarPalabra.textContent;
+    dibujarLineasPalabras(pincel, palabraAdivinar.length);
+});
